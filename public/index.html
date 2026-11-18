@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>React Native Web App</title>
+   <!-- Add this inside your public/index.html file -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+  /* These styles make the body full-height */
+  html,
+  body {
+    height: 100%;
+  }
+  /* These styles disable body scrolling if you are using <ScrollView> */
+  body {
+    overflow: hidden;
+  }
+  /* These styles make the root element full-height */
+  #root {
+    display: flex;
+    height: 100%;
+  }
+</style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Remove the script tag - HtmlWebpackPlugin will inject it -->
+  </body>
+</html>

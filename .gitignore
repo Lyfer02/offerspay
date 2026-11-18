@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+dist/
+node_modules/
+
+# Native build output and dependency caches
+android/.gradle/
+android/.kotlin/
+android/app/build/
+android/app/src/main/assets/index.android.bundle
+android/hs_err_pid*.log
+android/.idea/
+ios/Pods/
+ios/build/
+.vscode/.react/
+
+# Local Firebase configuration and signing credentials
+android/app/google-services.json
+android/app/*.keystore
+android/app/*.jks

@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        ndkVersion = "26.1.10909125"
+        kotlinVersion = "1.9.23"
+        
+        project.ext.react = [
+            enableHermes: true ,// Enable Hermes here
+            hermesCommandLineArgs: ["-O", "-Dintl"],
+        ]
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    // dependencies {
+    //     classpath("com.android.tools.build:gradle:8.2.2")
+    //     classpath("com.facebook.react:react-native-gradle-plugin")
+    //     classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")  
+    // }
+      dependencies {
+        classpath("com.android.tools.build:gradle:8.6.0")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23")
+        //   classpath ('com.google.gms:google-services:4.4.4')
+         classpath ('com.google.gms:google-services:4.4.4')
+    }
+   
+}
+
+apply plugin: "com.facebook.react.rootproject"
